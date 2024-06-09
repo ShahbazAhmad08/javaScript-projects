@@ -1,0 +1,11 @@
+const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+let date=document.getElementById("date");
+let day=document.getElementById("day");
+let month=document.getElementById("month");
+let year=document.getElementById("year");
+const d= new Date();
+date.innerText=d.getDate();
+day.innerText=days[d.getDay()];
+month.innerText=months[d.getMonth()];
+year.innerText=d.getFullYear()
